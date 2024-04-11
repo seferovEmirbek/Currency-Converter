@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.cbr-xml-daily.ru/money.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="container">
+        <h2>Калькулятор валют</h2>
+        <div class="input-container">
+            <input type="number" id="amount" placeholder="Введите сумму">
+        </div>
+        <div class="input-container">
+            <select id="fromVal">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <span>в</span>
+            <select id="toVal">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <button>Рассчитать</button>
+        </div>
+        <span id="result"></span>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
